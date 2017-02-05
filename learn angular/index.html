@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<title>Tony's Pizza</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" 
+
+
+
+</head>
+<body ng-controller="mycontroller">
+<div class="container">
+<h1>Tony's Pizza</h1>
+<h2>{{model.title}}</h2>
+<div>
+        <label><input type="radio" name="category" ng-click="changeMainDish('Cheese Pizza')"/> Cheese Pizza</label>
+    </div>
+    <div>
+        <label><input type="radio" name="category" ng-click="changeMainDish('Pepperoni Pizza')"/> Pepperoni Pizza</label>
+    </div>
+    <div>
+        <label><input type="radio" name="category" ng-click="changeMainDish('Margherita  Pizza')"/> Margherita Pizza</label>
+    </div>
+    <div>
+        <label><input type="radio" name="category" ng-click="changeMainDish('BBQ Chicken Pizza')"/> BBQ Chicken Pizza</label>
+    </div>
+    <div>
+        <label><input type="radio" name="category" ng-click="changeMainDish('Combo Pizza')"/> Combo Pizza</label>
+    </div>
+    <div>
+    <h3>Selected Item</h3>
+    <pre>{{model.maindish}}</pre>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="JS/app.js"></script>
+<script src="JS/controller.js"></script>
+</body>
+</html>
+
